@@ -3,3 +3,5 @@ chat_azure.py
 __pycache__
 .venv_chatbot
 logs
+img
+notebook
