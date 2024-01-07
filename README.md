@@ -1,16 +1,16 @@
 # 💁 Chatbot for Interacting with Your Books 📝
-![Alt text](<Screenshot 2024-01-07 202455.png>)
 ## Introduction
 
-🤖 Welcome to our chatbot designed to interact with books, offering a unique conversational experience. While it's tailored for books, you can easily adapt it to engage with various types of content.
+🤖 Welcome to my chatbot, a unique tool designed for engaging conversations with books. This chatbot leverages the OpenAI API to interact specifically with an amazing book, "The Almanack of Naval Ravikant." I used Streamlit to develop the graphical interface, Langchain for the QA chain, and Chroma as the vector database. While it's primarily tailored for books, you can easily adapt it to engage with various types of content.
+
+![Alt text](<Screenshot 2024-01-07 202455.png>)
 
 ## Features
 
 1. Generates responses based on a book written by Naval Ravikant.
 2. Allows users to provide feedback with a thumbs up or down.
 3. Stores user feedback in a JSON file for historical analysis.
-4. Implements chunk historicization to understand response limitations (e.g., why a certain answer was not known, or if there were issues with the Retrieval-Augmented Generation model).
-5. Cites sources for the information provided in responses.
+4. Cites sources for the information provided in responses.
 
 ## Requirements
 
