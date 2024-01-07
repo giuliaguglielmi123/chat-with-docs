@@ -24,26 +24,31 @@ if "chat_question" not in st.session_state:
     st.session_state["chat_question"] = []
 
 
-# Streamlit does not support clearing the text input widget directly via the script.
-def clear_input_text():
-    global input_text
-    input_text = ""
-
-
-
 def store_feedback(question, answer, feedback):
-    data = {
+    data={
+
         "question": question,
         "answer": answer,
         "feedback": feedback
+
     }
-    
-    with open('feedback.json', mode='a', encoding='utf-8') as file:
-        # Convert the dictionary to a JSON string and write it to the file
-        file.write(json.dumps(data) + '\n')
+    # try to read the existing data
+    try: # verify if the file doesn't exist or if it isn't correct 
+        with open("feedback.json", mode="r", encoding="utf-8") as f:
+            existing_data = json.load(f)
+            if not isinstance(existing_data, list):
+                existing_data = []
+    except (FileNotFoundError, json.JSONDecodeError):
+        existing_data = []
+
+    existing_data.append(data)
+
+    # Write updated data back to the file
+    with open("feedback.json", mode="w", encoding="utf-8") as f:
+        json.dump(existing_data, f, indent=4, ensure_ascii=False)
 
 
-# We will get the user's input by calling the get_text function
+# Function to clean all
 def clear_chat_data():
     st.session_state['past'] = [] # history chat
     st.session_state['generated'] = []
@@ -51,25 +56,18 @@ def clear_chat_data():
     st.session_state['chat_source_documents'] = []
     st.session_state['chat_question'] = []
 
+
+# button to clear all
 clear_chat = st.button("Clear chat", key="clear_chat", on_click=clear_chat_data)
 
-user_input = st.text_input("Ask your Question", key="input", on_change=clear_input_text)
-
-
-
-# the main function is really important: once get user's input and the relative answer by the chatbot it will show both
-# def run_chat():
+user_input = st.text_input("Ask your Question", key="input")
 
 
 if user_input: # did user ask a question ?
         
-    # store the outputs
-    # st.session_state['chat_question'].append(user_input) # append user's question to your history chat
-   
+
     st.session_state['chat_question'], result, sources, source_chunks = get_semantic_answer_lang_chain(user_input, st.session_state['past']) # generate the answer
     
-    # query, result['answer'], sources, source_chunks
-
 
     st.session_state['chat_source_documents'].append(sources)
     st.session_state['past'].append((st.session_state['chat_question'], result)) # question - answer
@@ -99,8 +97,4 @@ if st.session_state['past']: # is there any history?
         message(answer_with_citations, is_user=True, key=str(i) + '_user') # one gets the answer
         st.markdown(f'\n\nSources: {st.session_state["chat_source_documents"][i]}') # this add the resource
 
-# Run the app: it guaranty that the main function is executed only when the script is executed as main script not when
-# # is imported as a module 
-# if __name__ == "__main__":
-#     run_chat()
 

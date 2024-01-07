@@ -14,7 +14,7 @@
 
 ## Requirements
 
-- OpenAI API key with access to Large Language Models (GPT-3).
+- OpenAI API key with access to Large Language Models.
 
 ## Installation
 

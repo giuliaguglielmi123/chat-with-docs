@@ -1,6 +1,5 @@
 .env
 chat_azure.py
-README.md
-code\__pycache__
+__pycache__
 .venv_chatbot
-code\logs
+logs
