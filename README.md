@@ -1,54 +1,66 @@
-# 💁 Chatbot for Interacting with Your Books 📝
+# 💁 Chatbot for Interacting with Books and Documents 📝
+
 ## Introduction
 
-🤖 Welcome to my chatbot, a unique tool designed for engaging conversations with books. This chatbot leverages the OpenAI API to interact specifically with an amazing book, "The Almanack of Naval Ravikant." I used Streamlit to develop the graphical interface, Langchain for the QA chain, and Chroma as the vector database. While it's primarily tailored for books, you can easily adapt it to engage with various types of content.
+🤖 Welcome to my interactive chatbot designed for engaging with books and documents. As an example, you'll find integrated in the docs an insightful book, "The Almanack of Naval Ravikant." This chatbot leverages Streamlit for its graphical interface, Langchain for the QA mechanism, and Chroma as the vector database.
 
-![Alt text](<img/screen_1.png>)
+![Chatbot Interface](img/screen_1.png)
 
 ## Features
 
-1. Generates responses based on a book written by Naval Ravikant.
-2. Allows users to provide feedback with a thumbs up or down.
-3. Stores user feedback in a JSON file for historical analysis.
-4. Cites sources for the information provided in responses.
+- **Dynamic Interaction**: Generates responses based on the books or documents you upload.
+- **User Feedback**: Allows users to express their opinions with a thumbs up or down.
+- **Feedback Storage**: Captures user feedback in a JSON file for historical analysis.
+- **Source Citing**: Includes references for the information provided in the responses.
 
 ## Requirements
 
-- OpenAI API key with access to Large Language Models.
+- An OpenAI API key with access to Large Language Models.
 
 ## Installation
 
-1. Clone the repository:
-git clone https://github.com/your-username/your-repository.git
+1. **Clone the Repository**:
 
-2. Create a virtual environment:
-python -m venv .venv_chatbot
-.venv_chatbot\Scripts\activate
+   ```
+   git clone https://github.com/your-username/your-repository.git
+   ```
 
-3. Install the required Python packages:
-pip install -r requirements.txt
+2. **Create a Virtual Environment**:
 
-4. Set up your OpenAI API key. Create a `.env` file in the root directory of the project with your API key:
+   ```
+   python -m venv .venv_chatbot
+   .venv_chatbot\Scripts\activate
+   ```
 
-5. Run the Streamlit app:
-streamlit run app.py
+3. **Install Required Packages**:
 
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. **Configure OpenAI API Key**:
+
+   - Create a `.env` file in the project's root directory and add your API key.
+
+5. **Run the Streamlit App**:
+   ```
+   streamlit run app.py
+   ```
 
 ## Customize the Document
 
-To test with a personalized document, please replace the files in the `docs` directory.
+To test the chatbot with a personalized document, replace the files in the `docs` directory with your document.
 
 ## Usage
 
-1. Type your query into the input box and press enter.
-2. After receiving the response, provide feedback by clicking the thumbs up or down button.
-3. Review the sources cited in the response.
+1. Enter your query in the input box and press enter.
+2. Provide feedback on the response using the thumbs up or down buttons.
+3. Review the cited sources in the chatbot's response.
 
 ## Contributions
 
-📝 Contributions are welcome! If you have suggestions for improvements, please feel free to submit a pull request.
+📝 Your contributions are greatly appreciated! If you have ideas for enhancements or improvements, feel free to submit a pull request.
 
 ### Additional Notes
 
-Before running `streamlit run app.py`, I installed `chromadb`. For this specific package, I needed to visit "Microsoft C++ Build Tools" and install all necessary components to compile C++ projects.
-
+- Before running `streamlit run app.py`, install `chromadb`. This package may require the installation of "Microsoft C++ Build Tools" and all necessary components to compile C++ projects.
