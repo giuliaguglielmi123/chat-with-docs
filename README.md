@@ -48,7 +48,7 @@ To test with a personalized document, please replace the files in the `docs` dir
 
 📝 Contributions are welcome! If you have suggestions for improvements, please feel free to submit a pull request.
 
-### Additional Notes
+### Additional Notes for windows users
 
 Before running `streamlit run app.py`, I installed `chromadb`. For this specific package, I needed to visit "Microsoft C++ Build Tools" and install all necessary components to compile C++ projects.
 
