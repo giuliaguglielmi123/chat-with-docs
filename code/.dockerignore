@@ -1,0 +1,18 @@
+# Exclude the .vscode directory
+.vscode/
+
+# Exclude common virtual environment directories
+venv_chatbot/
+
+# Additionally, you might want to exclude other common directories and files
+# that are not needed in your Docker image:
+
+# Exclude all bytecode compiled files
+__pycache__/
+
+# Exclude local development directories
+.gitignore
+.dockerignore
+Dockerfile
+README.md
+
