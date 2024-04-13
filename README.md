@@ -18,12 +18,13 @@
 
 ## Docker run
 1. move to ./code folder
-2. run 
-docker build -t chatbot:poc .
+2. docker build -t chatbot:poc .
+
 Note: if your account isn't added to the Docker group, add run 
+
 sudo docker build -t chatbot:poc .
-3. run
-Docker run chatbot:poc
+
+3. Docker run chatbot:poc
 
 ## Local run with pip
 
