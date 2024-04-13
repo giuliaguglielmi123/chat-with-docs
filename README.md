@@ -3,7 +3,7 @@
 
 🤖 Welcome to my chatbot! ask it any question and the information would be stored in a JSON file. Plus, if it finds any answers, it will return the sources. 
 
-![Alt text](<img/screen_1.png>)
+![Alt text](<img/screen_1.png>) ![Alt text](<img/screen_2.png>)
 
 ## Features
 
@@ -20,7 +20,7 @@
 1. move to ./code folder
 2. docker build -t chatbot:poc .
 
-Note: if your account isn't added to the Docker group, add run 
+Note: if your account isn't added to the Docker group, add sudo before: 
 
 sudo docker build -t chatbot:poc .
 
