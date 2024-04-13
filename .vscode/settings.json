@@ -3,7 +3,7 @@
     "terminal.integrated.profiles.linux": {
         "bash": {
             "path": "bash",
-            "args": ["-c", "source /home/giulia/Documents/giulia/chat-with-docs/venv_chat/bin/activate"]
+            //"args": ["-c", "source /home/giulia/Documents/giulia/chat-with-docs/venv_chat/bin/activate"]
         }
     }
 }

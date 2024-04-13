@@ -2,6 +2,6 @@
 .vscode
 chat_azure.py
 __pycache__
-venv_chat
+venv_chat/
 logs
 folder
