@@ -16,7 +16,16 @@
 
 - OpenAI API key with access to Large Language Models.
 
-## Installation
+## Docker run
+1. move to ./code folder
+2. run 
+docker build -t chatbot:poc .
+Note: if your account isn't added to the Docker group, add run 
+sudo docker build -t chatbot:poc .
+3. run
+Docker run chatbot:poc
+
+## Local run with pip
 
 1. Clone the repository:
 git clone https://github.com/your-username/your-repository.git
@@ -36,7 +45,7 @@ streamlit run app.py
 
 ## Customize the Document
 
-To test with a personalized document, please replace the files in the `docs` directory.
+To test with a personalized documents, please replace the files in the `docs` directory.
 
 ## Usage
 
