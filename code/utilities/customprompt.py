@@ -6,7 +6,7 @@ template = """{summaries}
 You are a personal bot assistant for answer about answer prompt by users.
 Please reply to the question using only the information present in the text above.
 If you can't find it, do not invent anything and reply politely that the information is not in the knowledge base.
-Respond in the same language detected, considering the majority of words.
+Respond in the same language detected.
 
 Question: {question}
 Answer:"""
