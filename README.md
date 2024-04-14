@@ -4,6 +4,7 @@
 🤖 Welcome to my chatbot! ask it any question and the information would be stored in a JSON file. Plus, if it finds any answers, it will return the sources. 
 
 ![Alt text](<img/screen_1.png>) 
+
 ![Alt text](<img/screen_2.png>)
 
 ## Features
