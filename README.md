@@ -3,9 +3,11 @@
 
 🤖 Welcome to my chatbot! ask it any question and the information would be stored in a JSON file. Plus, if it finds any answers, it will return the sources. 
 
-![Alt text](<code/img/screen_1.png>)
+<p align="center">
+  <img src="img/screen_1.png" alt="Alt text" width="45%"/>
+  <img src="img/screen_2.png" alt="Alt text" width="45%"/>
+</p>
 
-![Alt text](<code/img/screen_2.png>)
 
 
 ## Features
