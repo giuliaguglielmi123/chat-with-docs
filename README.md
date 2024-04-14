@@ -5,8 +5,9 @@
 
 <p align="center">
   <img src="code/img/screen_1.png" alt="Alt text" width="45%"/>
-  <img src="ode/img/screen_2.png alt="Alt text" width="45%"/>
+  <img src="code/img/screen_2.png" alt="Alt text" width="45%"/>
 </p>
+
 
 
 
