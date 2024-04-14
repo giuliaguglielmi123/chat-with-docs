@@ -1,7 +1,6 @@
 .env
 .vscode
-chat_azure.py
-__pycache__
+__pycache__/
 venv_chat/
-logs
-folder
+logs/
+code/__pycache__
