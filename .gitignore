@@ -1,6 +1,7 @@
 .env
-.vscode
+.vscode/
 __pycache__/
 venv_chat/
 logs/
 code/__pycache__
+code/requirements_copy.txt

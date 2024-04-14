@@ -41,43 +41,49 @@ sudo docker build -t chatbot:poc .
 ## Local run with pip - windows
 
 1. Clone the repository:
+
 git clone https://github.com/your-username/your-repository.git
 
 2. Create a virtual environment:
 
-python -m venv .venv_chatbot
+python -m venv venv_chat
 
 activate the environemnt:
 
-.venv_chatbot\Scripts\activate
+venv_chat\Scripts\activate
 
 3. Install the required Python packages:
+
 pip install -r requirements.txt
 
 4. Set up your OpenAI API key. Create a `.env` file in the root directory of the project with your API key:
 
 5. Run the Streamlit app:
+
 streamlit run app.py
 
 # Local run with pip - Linux
 
 1. Clone the repository:
+
 git clone https://github.com/your-username/your-repository.git
 
 2. Create a virtual environment:
 
-python3 -m venv .venv_chatbot
+python3 -m venv venv_chat
 
 activate the environemnt:
 
-source .venv_chatbot\bin\activate
+source venv_chat\bin\activate
 
 3. Install the required Python packages:
+
 pip install -r requirements.txt
 
 4. Set up your OpenAI API key. Create a `.env` file in the root directory of the project with your API key:
 
 5. Run the Streamlit app:
+
 streamlit run app.py
 
 
